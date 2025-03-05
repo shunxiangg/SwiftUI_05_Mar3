@@ -13,10 +13,10 @@ video demo:
 ![image](https://github.com/user-attachments/assets/fa242256-0bbf-4df6-9ea2-f6dacae76b70)
 
 swift using MacBook Air with running on xcode and i use playgrund to test out things
-
-features include 
--login
--dark/light mode
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#features include 
+##-login
+##-dark/light mode
   - ```    Button(action: {
                         if isValid && !username.isEmpty {
                             isLoggedIn = true
@@ -52,9 +52,13 @@ features include
                         )
                     )
     ```
--profile page
--counter
--playlist (song can be played i attatch mp3 file into the code for it to run when the play button is clicked) - [improvement to be made i can put the song for different titles into a dictionary so when i click on specific song it will play the specific song related to the title but in this case it was a 3 days workshop and i only put in one song for all song titles dur to time constraint]
+##-profile page
+##-Counter:
+    The counter increments and decrements the displayed number.
+    When the number reaches zero, the "Decrease" button is disabled to prevent the count from going negative.
+    A "Reset" button allows users to reset the counter back to zero.
+    Additionally, when the number exceeds a certain threshold, the counter’s color changes dynamically based on the value, using an if-else statement to adjust the appearance.
+##-playlist The app allows users to play songs by attaching an MP3 file in the code, which plays when the play button is clicked. An improvement could be to associate different songs with specific titles by using a dictionary, so that selecting a particular song title plays the corresponding track. However, due to time constraints during a 3-day workshop, only one song was included for all song titles.
   - ```struct PlayListScreen: View {
     @State private var isPlaying = false
     @State private var volume: Double = 0
@@ -279,3 +283,13 @@ struct PlayListScreen_Previews: PreviewProvider {
     }
 }
 ```
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+credits: Ngee Ann Poly for organising this SwiftUI workshop where i learn what is Swift and how it is able to create user friendly interface
+thank you :)
+
+
+
