@@ -17,7 +17,7 @@ swift using MacBook Air with running on xcode and i use playgrund to test out th
 features include 
 -login
 -dark/light mode
-  - `    Button(action: {
+  - ```    Button(action: {
                         if isValid && !username.isEmpty {
                             isLoggedIn = true
                         }
@@ -51,11 +51,11 @@ features include
                             isValid && !username.isEmpty
                         )
                     )
-    `
+    ```
 -profile page
 -counter
 -playlist (song can be played i attatch mp3 file into the code for it to run when the play button is clicked) - [improvement to be made i can put the song for different titles into a dictionary so when i click on specific song it will play the specific song related to the title but in this case it was a 3 days workshop and i only put in one song for all song titles dur to time constraint]
-  - `struct PlayListScreen: View {
+  - ```struct PlayListScreen: View {
     @State private var isPlaying = false
     @State private var volume: Double = 0
     @State private var timer: Cancellable? = nil
@@ -278,4 +278,4 @@ struct PlayListScreen_Previews: PreviewProvider {
         )
     }
 }
-`
+```
